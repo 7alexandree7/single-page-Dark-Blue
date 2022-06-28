@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-body: #131416;
+    --color-font: #fff;
+    --color-button: #0772eb;
+    --color-card: #1e212c;
+}
+
+body {
+    font-family: 'inter', sans-serif;
+    background-color: var(--bg-body);
+}
+
+#container {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 35px;
+    
+}
+
+.logo h2 {
+    color: var(--color-font);
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    margin-right: 7px;
+}
+
+/* SECTION 1*/
+
+.section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    justify-content: space-around;
+}
+
+.ebook img {
+    height: auto;
+    width: 230px;
+    
+}
+
+.action-title h2 {
+    color: var(--color-font);
+    font-size: 40px;
+}
+
+
+.action-title .button  {
+    background-color: var(--color-button);
+    color: var(--color-font);
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 70px;
+    margin-top: 50px;
+    border-radius: 50px;
+}
+
+/* SECTION 2 (cards)*/
+
+.section-2 {
+    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 200px;
+}
+
+.section-2 h2 {
+    color: var(--color-font);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 28px;
+    text-align: center;
+    
+}
+
+.cards-box {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: space-around;
+    
+}
+
+.card {
+    background-color: var(--color-card);
+    width: 200px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    border-radius: 10px;
+    color: var(--color-font);
+}
+
+.card img {
+    width: 65px;
+    height: 65px;   
+}
+
+.section-3 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 180px;
+}
+
+.button2 {
+    display: inline-block;
+    background-color: #1e212c;
+    color: var(--color-font);
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+}
+
+.section-3 h2 {
+    font-size: 48px;
+    color: #0772eb;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.section-3 p {
+    color: var(--color-font);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c2029;
+    height: 100px;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.button-footer {
+    display: inline-block;
+    padding: 15px 70px;
+    background-color: var(--color-button);
+    color: var(--color-font);
+    border-radius: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-top: -55px;
+}
+
+ footer p {
+    color: var(--color-font);
+    font-size: 16px;
+    margin-top: 30px;
+ }
+
+ @media (max-width: 420px) {
+    .section1 {
+        display: flex;
+        flex-direction: column;      
+        align-items: center;
+        padding: 10px;
+    }
+
+    .ebook img {
+       margin-right: 0;
+    }
+
+    .action-title a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .action-title h2 {   
+
+        text-align: center;
+        font-size: 40px;
+        color: var(--color-font);
+    }
+
+    .button {
+        margin-top: 20px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;       
+    }
+
+    .card {
+        margin-top: 40px;
+    }
+
+    .section-3 h2 {
+        text-align: center;
+        font-size: 33px;
+    }
+
+    .section-3 p {
+        font-size: 14px;
+        
+    }
+
+
+ }
