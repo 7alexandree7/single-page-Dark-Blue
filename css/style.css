@@ -19,9 +19,9 @@ body {
 }
 
 #container {
-    width: 80vw;
     margin-left: auto;
     margin-right: auto;
+    max-width: 90%;
 }
 
 header .logo {
@@ -59,6 +59,10 @@ header .logo {
     
 }
 
+.action-title  {
+    padding-left: 30px;
+}
+
 .action-title h2 {
     color: var(--color-font);
     font-size: 40px;
@@ -88,6 +92,7 @@ header .logo {
     justify-content: center;
     flex-direction: column;
     margin-bottom: 200px;
+    
 }
 
 .section-2 h2 {
@@ -97,6 +102,7 @@ header .logo {
     font-size: 28px;
     text-align: center;
     
+    
 }
 
 .cards-box {
@@ -104,6 +110,7 @@ header .logo {
     align-items: center;
     margin-top: 50px;
     justify-content: space-around;
+    width: 100%;
     
 }
 
@@ -184,16 +191,46 @@ footer {
     margin-top: 30px;
  }
 
- @media (max-width: 420px) {
+
+ @media (max-width: 768px) {
+
+    #container .section1 .action-title .button {
+        text-align: center;
+        
+    }
+
+    #container .section-2 {
+      margin-bottom: 130px;
+    }
+
+
+     #container .section-2 .cards-box   {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #container .section-2 .cards-box .card {
+        margin-bottom: 30px;
+    }
+
+ }
+
+
+ 
+
+
+ @media (max-width: 425px) {
     .section1 {
         display: flex;
         flex-direction: column;      
         align-items: center;
         padding: 10px;
+        width: 100%;
     }
 
     .ebook img {
        margin-right: 0;
+       margin-bottom: 60px;
     }
 
     .action-title a {
@@ -205,9 +242,11 @@ footer {
 
     .action-title h2 {   
 
-        text-align: center;
-        font-size: 40px;
+        
+        font-size: 24px;
         color: var(--color-font);
+        text-align: left;
+        
     }
 
     .button {
@@ -223,9 +262,13 @@ footer {
         margin-top: 40px;
     }
 
+    .section-2 h2 {
+        font-size: 22px;
+    }
+
     .section-3 h2 {
         text-align: center;
-        font-size: 33px;
+        font-size: 28px;
     }
 
     .section-3 p {
